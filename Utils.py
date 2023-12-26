@@ -20,5 +20,14 @@ def formatar_cnpj(cnpj):
     
     return cnpj_formatado
 
+def formatar_cnj(cnj):
+    cnj_numerico = re.sub(r'\D', '', cnj)
+
+    if len(cnj_numerico) != 20:
+        raise ValueError("CNJ deve conter 20 dígitos")
+
+    cnj_formatado = re.sub(r'(\d{7})(\d{2})(\d{4})(\d{1})(\d{2})(\d{4})', r'\1-\2.\3.\4.\5.\6', cnj_numerico)
+    
+    return cnj_formatado
 
 
