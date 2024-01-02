@@ -1,2 +1,35 @@
-.vscode/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
 venv/
+env/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Python local build / dist directories
+build/
+dist/
+
+# Python egg metadata
+*.egg-info/
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Sphinx documentation
+docs/_build/
